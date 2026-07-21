@@ -137,41 +137,19 @@ Hệ suy luận mờ tính toán các lượng hiệu chỉnh:
 
 Các tham số PID sau khi hiệu chỉnh được xác định bởi:
 
-$$
-K_p^{*}=K_p+\Delta K_p
-$$
+$$ K_p^{*}=K_p+\Delta K_p $$
 
-$$
-K_i^{*}=K_i+\Delta K_i
-$$
+$$ K_i^{*}=K_i+\Delta K_i $$
 
-$$
-K_d^{*}=K_d+\Delta K_d
-$$
+$$ K_d^{*}=K_d+\Delta K_d $$
 
 Tín hiệu điều khiển Fuzzy PID được xác định bởi:
 
-$$
-u(t) =
-K_p^{*}e(t)
-+
-K_i^{*}\int_{0}^{t}e(\tau)\,d\tau
-+
-K_d^{*}\frac{de(t)}{dt}
-$$
+$$ u(t) = K_p^{*}e(t) + K_i^{*}\int_{0}^{t}e(\tau)\,d\tau + K_d^{*}\frac{de(t)}{dt} $$
 
 Hoặc viết đầy đủ:
 
-$$
-u(t) =
-\left(K_p+\Delta K_p\right)e(t)
-+
-\left(K_i+\Delta K_i\right)
-\int_{0}^{t}e(\tau)\,d\tau
-+
-\left(K_d+\Delta K_d\right)
-\frac{de(t)}{dt}
-$$
+$$ u(t) = \left(K_p+\Delta K_p\right)e(t) + \left(K_i+\Delta K_i\right) \int_{0}^{t}e(\tau)\,d\tau + \left(K_d+\Delta K_d\right) \frac{de(t)}{dt} $$
 
 ---
 
@@ -187,8 +165,7 @@ Hệ suy luận mờ sử dụng hai đầu vào:
 Trong mô hình rời rạc, tốc độ thay đổi sai lệch có thể được tính gần đúng:
 
 $$
-de(k)
-=
+de(k) =
 \frac{e(k)-e(k-1)}{T_s}
 $$
 
