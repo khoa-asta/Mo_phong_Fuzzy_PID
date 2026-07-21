@@ -97,8 +97,7 @@ Cấu trúc phân tầng giúp các vòng điều khiển có thể được thi
 Bộ điều khiển PID được mô tả bởi:
 
 $$
-u(t)
-=
+u(t) =
 K_p e(t)
 +
 K_i \int_{0}^{t} e(\tau)\,d\tau
@@ -153,8 +152,7 @@ $$
 Tín hiệu điều khiển Fuzzy PID được xác định bởi:
 
 $$
-u(t)
-=
+u(t) =
 K_p^{*}e(t)
 +
 K_i^{*}\int_{0}^{t}e(\tau)\,d\tau
@@ -165,8 +163,7 @@ $$
 Hoặc viết đầy đủ:
 
 $$
-u(t)
-=
+u(t) =
 \left(K_p+\Delta K_p\right)e(t)
 +
 \left(K_i+\Delta K_i\right)
